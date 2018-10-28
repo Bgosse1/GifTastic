@@ -5,7 +5,7 @@ $(document).ready(function () {
     function displayAnimalInfo() {
         $("#animal-view").empty();
         var animal = $(this).attr("data-name");
-        var apiKey = <api-key>;
+        var apiKey = "your-api-key";
         var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + animal + "&limit=25&offset=0&lang=en";
         console.log(queryURL);
         $.ajax({
